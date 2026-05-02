@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name ="Pheonix Automation Suite" verbose = "1">
+
+  <test name="Inwarranty flow test">
+    <classes>
+      <class name="com.api.tests.LoginAPIRequestTest"/>
+      <class name="com.api.tests.UserdetailsAPIRequestTest"/>
+      <class name="com.api.tests.CountAPIRequestTest"/>
+      <class name="com.api.tests.MasterAPIRequestTest"/>
+    </classes>
+  </test>
+</suite>
