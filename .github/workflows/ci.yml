@@ -38,7 +38,7 @@ jobs:
         cache: maven
         
     - name: Execute maven test
-      run: mvn test -Dsuitexmlfile="${{ github.event.inputs.suitexmlfile }}" -Denv="${{ github.event.inputs.env }}"
+      run: mvn clean test -Dsuitexmlfile="${{ github.event.inputs.suitexmlfile }}" -Denv="${{ github.event.inputs.env }}"
 
     - name: Upload a Build Artifact
       if: always()
